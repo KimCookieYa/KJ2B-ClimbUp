@@ -13,7 +13,7 @@ const handleClick = () => {
 function App() {
   const callApi = async () => {
     axios
-      .get("http://localhost:5000/api")
+      .get("/api")
       .then((res) => console.log(res.data.test));
   };
 
