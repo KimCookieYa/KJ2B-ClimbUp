@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Require the peer dependencies of hand-pose-detection. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+    <!-- You must explicitly require a TF.js backend if you're not using the TF.js union bundle. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/hand-pose-detection"></script>
+
+    <link
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header><h1>hello</h1></header>
+    <main>
+      <div id="welcome">
+        <form>
+          <input placeholder="room_name" required type="text" />
+          <button>Enter Room</button>
+        </form>
+      </div>
+      <div id="call">
+        <div id="myStream" class="canvas-wrapper">
+          <video
+            id="myFace"
+            autoplay
+            playsinline
+            style="position: absolute"
+          ></video>
+          <canvas id="output_canvas" style="position: absolute"></canvas>
+          <button id="mute">Mute</button>
+          <button id="camera">Camera ON</button>
+          <select id="cameras"></select>
+          <video
+            id="peerFace"
+            autoplay
+            playsinline
+            width="400"
+            height="400"
+          ></video>
+
+          <button id="webcamButton">
+            <span class="mdc-button__label">ENABLE WEBCAM</span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/socket.io/socket.io.js"></script>
+    <script type="module" src="/public/js/app.js"></script>
+  </body>
+</html>
