@@ -1,0 +1,34 @@
+{ "compressionlevel":-1,
+ "height":30,
+ "infinite":false,
+ "layers":[
+        {
+         "compression":"zlib",
+         "data":"eJytllkKwzAMRJUDGH+rvVF9\/\/uUgA1iOiPZJYGhi6IXrW4vM7se0n21oA6fT2XAepKH6oV2eTtxRrtP7cTXwr3KlvF8g+fT5sRe8TBvt9\/YsvqhHX1jP9Z3ryBWPweGipnxPkW\/oj++snwM\/FQ8nfAj7z01El\/mr3hLw3ieqr8sf9XfOFfsPeutA1fxGvFTu5bNH+aTzczJPGMP1DOzeal4K6bdfLF26Hcyz8jDOqk9OeWpvet\/8tSeqTNc8dSZrPhs3ypeNSsZL5OqHcuXnYNMJ7+XyFfnGIthbLCqnka7ii\/7H5A9676+aCUjMA==",
+         "encoding":"base64",
+         "height":30,
+         "id":1,
+         "name":"Tile Layer 1",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":20,
+         "x":0,
+         "y":0
+        }],
+ "nextlayerid":2,
+ "nextobjectid":1,
+ "orientation":"orthogonal",
+ "renderorder":"right-down",
+ "tiledversion":"1.10.1",
+ "tileheight":16,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "source":"sunny-land-phaser-project\/sunny-land\/assets\/maps\/tileset3.tsx"
+        }],
+ "tilewidth":16,
+ "type":"map",
+ "version":"1.10",
+ "width":20
+}

@@ -1,11 +1,12 @@
 import Phaser from "phaser";
 
 import HelloWorldScene from "./scenes/HelloWorldScene";
+import Background from "./scenes/Background";
 
 const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
   parent: "phaser-container",
-  backgroundColor: "#282c34",
+  backgroundColor: "#FFFFFF",
   scale: {
     mode: Phaser.Scale.ScaleModes.RESIZE,
     width: 1000,
@@ -14,10 +15,10 @@ const config: Phaser.Types.Core.GameConfig = {
   physics: {
     default: "arcade",
     arcade: {
-      gravity: { y: 300 },
+      gravity: { y: 0 },
     },
   },
-  scene: [HelloWorldScene],
+  scene: [Background, HelloWorldScene],
 };
 
 export default new Phaser.Game(config);
